@@ -1,0 +1,36 @@
+.message {
+    margin: 5px 0  0 10px;
+    border: 2px solid yellow;
+    background-color: yellow;
+    width: 320px;
+    height: 105px;
+    border-radius: 15px;
+
+}
+.messages{
+    width: 250px;
+    height: 90px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 15px;
+    background-color: green;
+    border-radius: 7px;
+}
+
+.message img{
+    width: 40px;
+    border-radius: 50%;
+    padding-left: 5px;
+}
+
+.messages h4 {
+    margin-left: 30px;
+    color: paleturquoise;
+}
+.messages p {
+    color: white;
+    text-align: center;
+}
+
+
+
