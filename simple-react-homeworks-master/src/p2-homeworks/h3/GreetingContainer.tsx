@@ -1,37 +1,53 @@
 import React, {useState} from "react";
 import Greeting from "./Greeting";
+import {UserType} from "./HW3";
 
-type GreetingContainerPropsType = {
-    users: any // need to fix any
-    addUserCallback: any // need to fix any
+
+export type GreetingContainerPropsType = {
+    users: Array<UserType>
+    addUserCallback: (name: string) => void
 }
 
-// более простой и понятный для новичков
-// function GreetingContainer(props: GreetingPropsType) {
-
-// более современный и удобный для про :)
-// уровень локальной логики
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>(""); // need to fix any
-    const [error, setError] = useState<any>(""); // need to fix any
-
-    const setNameCallback = (e: any) => { // need to fix any
-        setName(""); // need to fix
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
+    const [name, setName] = useState<string>("");
+    const [error, setError] = useState<string>("");
+    const decimalsStartCheck = (name: string) => {
+        const regexp = /(^\d+)|(^\s)/g;
+        const match = regexp.test(name);
+        return match
+    }
+    const setNameCallback = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const {value: newName} = e.currentTarget;
+        setError("");
+        setName(newName);
     };
+
     const addUser = () => {
-        alert(`Hello  !`); // need to fix
+        const decimalsStartMatch = decimalsStartCheck(name)
+
+        if (name.trim() && !decimalsStartMatch) {
+            setError('');
+            alert(`Hello ${name} !`);
+            addUserCallback(name);
+        } else {
+            setError('Enter name please!')
+            setName("");
+        }
+
     };
 
-    const totalUsers = 0; // need to fix
+    const totalUsers = users.length
 
     return (
-        <Greeting
-            name={name}
-            setNameCallback={setNameCallback}
-            addUser={addUser}
-            error={error}
-            totalUsers={totalUsers}
-        />
+        <div>
+            <Greeting
+                name={name}
+                setNameCallback={setNameCallback}
+                addUser={addUser}
+                totalUsers={totalUsers}
+                error={error}
+            />
+        </div>
     );
 }
 
