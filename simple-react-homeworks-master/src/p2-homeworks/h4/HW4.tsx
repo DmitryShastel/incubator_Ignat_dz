@@ -20,8 +20,8 @@ function HW4() {
 
     return (
         <div>
-            <hr/>
-            homeworks 4
+
+            <h2 className={s.h}>Homeworks 4</h2>
 
             <div className={s.column}>
                 {/*should work (должно работать)*/}
@@ -30,7 +30,7 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
 
                 {/*should work (должно работать)*/}
@@ -53,7 +53,7 @@ function HW4() {
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
 
-            <hr/>
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperInputText/>*/}
             {/*<AlternativeSuperButton/>*/}
