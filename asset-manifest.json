@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/incubator_Ignat_dz/static/css/main.2f17b45f.chunk.css",
+    "main.css": "/incubator_Ignat_dz/static/css/main.3f3e9690.chunk.css",
     "main.js": "/incubator_Ignat_dz/static/js/main.0f208e99.chunk.js",
     "main.js.map": "/incubator_Ignat_dz/static/js/main.0f208e99.chunk.js.map",
     "runtime-main.js": "/incubator_Ignat_dz/static/js/runtime-main.c0ca7be8.js",
@@ -8,15 +8,15 @@
     "static/js/2.85217652.chunk.js": "/incubator_Ignat_dz/static/js/2.85217652.chunk.js",
     "static/js/2.85217652.chunk.js.map": "/incubator_Ignat_dz/static/js/2.85217652.chunk.js.map",
     "index.html": "/incubator_Ignat_dz/index.html",
-    "precache-manifest.3baaf50a7a043052507081f2cb123bc6.js": "/incubator_Ignat_dz/precache-manifest.3baaf50a7a043052507081f2cb123bc6.js",
+    "precache-manifest.b84a763784e3e785647730787b15e2b8.js": "/incubator_Ignat_dz/precache-manifest.b84a763784e3e785647730787b15e2b8.js",
     "service-worker.js": "/incubator_Ignat_dz/service-worker.js",
-    "static/css/main.2f17b45f.chunk.css.map": "/incubator_Ignat_dz/static/css/main.2f17b45f.chunk.css.map",
+    "static/css/main.3f3e9690.chunk.css.map": "/incubator_Ignat_dz/static/css/main.3f3e9690.chunk.css.map",
     "static/js/2.85217652.chunk.js.LICENSE.txt": "/incubator_Ignat_dz/static/js/2.85217652.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c0ca7be8.js",
     "static/js/2.85217652.chunk.js",
-    "static/css/main.2f17b45f.chunk.css",
+    "static/css/main.3f3e9690.chunk.css",
     "static/js/main.0f208e99.chunk.js"
   ]
 }
