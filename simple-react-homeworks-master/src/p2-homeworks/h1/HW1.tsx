@@ -1,6 +1,7 @@
 import React from "react";
 import "./Message";
 import Message from "./Message";
+import s from './Message.module.css';
 
 export type MessageDataType = {
     avatar: string
@@ -19,15 +20,15 @@ const messageData: MessageDataType = {
 
 function HW1() {
     return (
-        <div>
-            <hr/>
+        <div className={s.message}>
+
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
                 message={messageData.message}
                 time={messageData.time}
             />
-            <hr/>
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
             {/*<hr/>*/}

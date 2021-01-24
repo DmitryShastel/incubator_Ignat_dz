@@ -3,7 +3,7 @@ import s from './Pages.module.css'
 
 export function Student1() {
     return (
-        <div className={s.page}>
+        <div className = {s.page}>
             Student 1
             <div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
